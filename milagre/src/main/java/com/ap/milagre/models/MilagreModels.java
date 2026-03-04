@@ -6,8 +6,11 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+// ele fez o modelo do banco ele tem um ID e um nome
+//Sempre a model é a primeira
+
 @Entity
-public class MIlagreModels {
+public class MilagreModels {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Long id;
@@ -15,7 +18,7 @@ public class MIlagreModels {
 
     private String nome;
 
-    public MIlagreModels() {}
+    public MilagreModels() {}
 
     public Long getId() {
         return id;
